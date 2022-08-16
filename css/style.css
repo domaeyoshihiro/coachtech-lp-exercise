@@ -1,3 +1,5 @@
+
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -31,7 +33,7 @@ a {
 
 
 .article {
-  height: 500px;
+  width: 100%;
   background-color: white;
 }
 
@@ -77,9 +79,9 @@ a {
   line-height: 20px;
 }
 
-/* ここからNews ？羅線、ニュースの背景修正必要 */
+/* ここからNews */
 .news {
-  height: 450px;
+  width: 100%;
   background-color: white;
 }
 
@@ -101,30 +103,39 @@ a {
 
 
 .news-table {
-  margin: 0 auto 0 200px;
-  font-size: 12px;
+  width: 50%;
+  display: block;
   border-bottom: solid 2px #808080;
   border-top: solid 2px #808080;
+  padding: 20px 0px;
+  margin: 0 auto 50px 200px;
   border-collapse: collapse;
+  
 }
 
 
 .news-tr {
+  font-size: 12px;
   line-height: 50px;
   border-bottom: solid 0.5px #808080;
   border-collapse: collapse;
+  
 }
 
 .news-td-date{
+  font-size: 12px;
   color: #808080;
   padding: 0 20px 0 0;
 }
 
 .news-td-mark {
+  font-size: 12px;
   background: #C71585;
   border-radius: 30px;
   color: white;
-  padding: 0 20px;
+  padding: 0px 20px;
+  /* このheightが認識されません */
+  height: 14px；
 }
 
 .news-td-text {
@@ -134,7 +145,7 @@ a {
 
 /* ここからabout */
 .about {
-  height: 400px;
+  width: 100%;
   background-color: #F5F5F5;
 }
 
@@ -181,7 +192,7 @@ a {
 /* ここからservice */
 
 .service {
-  height: 450px;
+  width: 100%;
   background-color: white;
 }
 
@@ -205,7 +216,7 @@ a {
   display: grid;
   grid-template-rows: 160px 160px;
   grid-template-columns: 450px 550px;
-  margin: 0 0;
+  margin: 0 auto 0 80px;
 }
 
 .service-card1 {
@@ -286,7 +297,7 @@ a {
 
 /* ここからblog */
 .blog {
-  height: 450px;
+  width: 100%;
   background-color: #F5F5F5;
 }
 
@@ -381,13 +392,13 @@ a {
   padding: 15px 20px;
   text-align: center;
   display: block;
-  margin: 30px auto 0;
+  margin: 30px auto;
 }
 
 
 /* ここからcompany */
 .company {
-  height: 450px;
+  width: 100%;
   background-color: white;
 }
 
@@ -409,7 +420,7 @@ a {
 
 .company-table {
   width: 60%;
-  margin: 0 auto 0 200px;
+  margin: 0 auto 50px 200px;
   border-collapse: collapse;
 }
 
@@ -432,7 +443,7 @@ a {
 
 /* ここからcareers interview */
 .careers-interview {
-  height: 200px;
+  width: 100%;
 }
 
 .careers-interview-flex {
@@ -468,7 +479,7 @@ a {
 
 /* ここからinquiry */
 .inquiry {
-  height: 200px;
+  width: 100%;
   background-color: white;
 }
 
@@ -505,13 +516,13 @@ a {
   background: linear-gradient(90deg, #C71585, #800080);
   text-align: center;
   box-shadow: 0 5px 0 #800080;
-  margin: 0 auto;
+  margin: 30px auto;
   display: block;
 }
 
 /* ここからfooter */
 footer {
-height: 30px;
+width: 100%;
 background-color: #F5F5F5;
 }
 
